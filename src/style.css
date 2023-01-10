@@ -280,6 +280,11 @@ html {
 }
 
 @media screen and (max-width: 900px) {
+  .container-work {
+
+    background-color: transparent;
+    
+  }
   .video-work {
     width: 72.5%;
   }
