@@ -243,25 +243,57 @@ html {
   color: #878787;
 }
 
+
+
+
+
 .aboutme-page-section {
   height: 100vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  vertical-align: middle;
   align-items: center;
   font-family: "Oxygen", sans-serif;
 }
 
+
+.container-aboutme{
+  margin-top: 18.5vh;
+  margin-left: 12.5%;
+  overflow: hidden;
+  width: 75%;
+  height: 60vh;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-bottom: 50vh;
+  font-weight: bold;
+  display: flex;
+}
+
+.aboutme-picture {
+  z-index: 10;
+  max-width: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5%;
+}
+
 .aboutme-picture img {
- 
+
   width: 70%;
   border-radius: 50%; 
-  transition: .5s; 
+  transition: ease-in-out 1s; 
+  filter:blur(.5px) ;
+  box-shadow: 0px 0px 15px 15px rgba(121, 121, 121, 0.2);
 
 }
 
-.aboutme-pciture img:hover {
-  width: 75%;
+.aboutme-picture img:hover{
+  width: 72.5%;
+  translate: -2.5%;
+  filter:blur(0px) ;
+  box-shadow: 0px 0px 10px 10px rgba(169, 169, 169, 0.312);
+
 }
 
 /* Responsive */
