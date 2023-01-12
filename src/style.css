@@ -243,6 +243,27 @@ html {
   color: #878787;
 }
 
+.aboutme-page-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oxygen", sans-serif;
+}
+
+.aboutme-picture img {
+ 
+  width: 70%;
+  border-radius: 50%; 
+  transition: .5s; 
+
+}
+
+.aboutme-pciture img:hover {
+  width: 75%;
+}
+
 /* Responsive */
 @media screen and (max-width: 4500px) {
   .image-work img {
@@ -275,15 +296,12 @@ html {
   }
   .projet-description {
     font-size: small;
-    
   }
 }
 
 @media screen and (max-width: 900px) {
   .container-work {
-
     background-color: transparent;
-    
   }
   .video-work {
     width: 72.5%;
