@@ -338,8 +338,13 @@ html {
   font-size: 30px;
   font-weight: bold;
   color: transparent;
-  -webkit-text-stroke: 0.01em white;
-  transition: -webkit-text-stroke 0.5s ease, 1s;
+  -webkit-text-stroke: .01em white;
+  transition: -webkit-text-stroke .5s ease;
+  
+}
+
+.swiper-slide p {
+  transition:ease-in-out .5s;
 }
 
 .swiper-slide p:hover {

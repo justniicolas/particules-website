@@ -18,7 +18,7 @@ const scene = new THREE.Scene();
 /**
  * Objects
  */
-// Texture
+//Texture
 const textureLoader = new THREE.TextureLoader();
 const gradientTexture = textureLoader.load("textures/gradients/s.jpg");
 gradientTexture.magFilter = THREE.NearestFilter;
