@@ -2,10 +2,7 @@ import "./style.css";
 import * as THREE from "three";
 import gsap from "gsap";
 
-var swiper = new Swiper(".mySwiper", {
-  effect: "cards",
-  grabCursor: true,
-});
+
 /**
  * Base
  */
