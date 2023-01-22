@@ -3,14 +3,8 @@ import * as THREE from "three";
 import gsap from "gsap";
 
 var swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-    dynamicBullets: true,
-  },
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  effect: "cards",
+  grabCursor: true,
 });
 /**
  * Base

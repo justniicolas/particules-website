@@ -91,7 +91,7 @@ html {
 .container-social-icon .social-media-icon i:hover {
   opacity: 2;
   cursor: pointer;
-  color: rgb(0, 0, 0);
+  color: gray;
   transition: 0.5s;
 }
 
@@ -104,15 +104,11 @@ html {
 }
 
 .home-page-section .text-presentation {
-  width: 100%; 
-  z-index: 9;
-
-  
+  width: 100%;
 }
 
 .home-page-section .text-presentation p {
   font-size: xx-large;
-
 }
 
 .home-page-section .text-presentation p:active {
