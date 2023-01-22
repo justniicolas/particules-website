@@ -11,7 +11,14 @@ html {
   font-family: "Bebas Neue", cursive;
   scroll-behavior: smooth;
 }
-
+#follower {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  margin: -16px 0 0 -16px;
+}
 .webgl {
   position: fixed;
   top: 0;
@@ -90,7 +97,7 @@ html {
 .container-social-icon .social-media-icon i:hover {
   opacity: 2;
   cursor: pointer;
-  color: gray;
+  color: rgb(0, 0, 0);
   transition: 0.5s;
 }
 
@@ -103,11 +110,15 @@ html {
 }
 
 .home-page-section .text-presentation {
-  width: 100%;
+  width: 100%; 
+  z-index: 9;
+
+  
 }
 
 .home-page-section .text-presentation p {
   font-size: xx-large;
+
 }
 
 .home-page-section .text-presentation p:active {
@@ -200,52 +211,24 @@ html {
   height: 4vh;
   padding: 10px;
   font-weight: 600;
+  display: flex;
+  flex-direction: row;
 }
 
 .skills-code-project {
-  position: absolute;
+  display: flex;
+  align-items: center;
   height: auto;
   margin-top: 2%;
   padding: 0.1rem 1rem;
   border-radius: 10px;
   background: #878787;
+  margin-right: 2%;
+  font-size: small;
 }
 
 .skills-code-project p {
   font-size: small;
-  display: flex;
-  align-items: center;
-}
-
-.skills-code-project1 {
-  position: absolute;
-  height: auto;
-  margin-top: 2%;
-  padding: 0.1rem 1rem;
-  border-radius: 10px;
-  background: #878787;
-}
-
-.skills-code-project1 p {
-  font-size: small;
-  display: flex;
-  align-items: center;
-}
-
-.skills-code-project2 {
-  position: absolute;
-  height: auto;
-  margin-top: 2%;
-  padding: 0.1rem 1rem;
-  border-radius: 10px;
-  background: #878787;
-  margin-left: 30%;
-}
-
-.skills-code-project2 p {
-  font-size: small;
-  display: flex;
-  align-items: center;
 }
 
 .projet-description {
@@ -497,6 +480,15 @@ html {
 ::-webkit-scrollbar-thumb {
   background: rgb(105, 105, 105);
   border-radius: 10px;
+}
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
 }
 
 /*# sourceMappingURL=main.css.map*/
