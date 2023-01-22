@@ -276,8 +276,8 @@ html {
 .container-aboutme {
 
   margin-top: 18.5vh;
-  margin-left: 12.5%;
   overflow: hidden;
+  margin-left: 12.5%;
   width: 75%;
   height: 60vh;
   background-color: transparent;
@@ -286,16 +286,20 @@ html {
   font-weight: bold;
   display: flex;
   justify-content: space-around;
+  background-color: #878787;
+
 }
 
 .aboutme-picture {
+  margin-left: -12.5%;;
   z-index: 10;
   max-width: fit-content;
   width: 35%;
   height: 60vh;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
+
 }
 
 .aboutme-picture img {
@@ -308,7 +312,6 @@ html {
 
 .aboutme-picture img:hover {
   width: 72.5%;
-
   filter: blur(0px);
   box-shadow: 0px 0px 10px 10px rgba(169, 169, 169, 0.312);
 }
@@ -320,6 +323,33 @@ html {
   align-items: center;
   width: 20%;
   height: 40vh;
+
+}
+.aboutme-description i {
+  z-index: 1000;
+  background-color: rgb(255, 255, 255);
+  height: 46px;
+  width: 46px;
+  text-align: center;
+  line-height: 46px;
+  padding : 0 10px 0 10px;
+  border-radius: 50%;
+
+  
+}
+.aboutme-description_caroussels{
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.aboutme-description_caroussel{
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10vh;
+  height: 50vh;
+  width: 50vh;
 }
 
 
