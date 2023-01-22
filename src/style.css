@@ -12,7 +12,14 @@ html {
   font-family: "Bebas Neue", cursive;
   scroll-behavior: smooth;
 }
-
+#follower {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  margin: -16px 0 0 -16px;
+}
 .webgl {
   position: fixed;
   top: 0;
@@ -91,7 +98,7 @@ html {
 .container-social-icon .social-media-icon i:hover {
   opacity: 2;
   cursor: pointer;
-  color: gray;
+  color: rgb(0, 0, 0);
   transition: 0.5s;
 }
 
@@ -104,11 +111,15 @@ html {
 }
 
 .home-page-section .text-presentation {
-  width: 100%;
+  width: 100%; 
+  z-index: 9;
+
+  
 }
 
 .home-page-section .text-presentation p {
   font-size: xx-large;
+
 }
 
 .home-page-section .text-presentation p:active {
