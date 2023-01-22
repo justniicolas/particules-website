@@ -12,14 +12,7 @@ html {
   font-family: "Bebas Neue", cursive;
   scroll-behavior: smooth;
 }
-#follower {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: white;
-  position: absolute;
-  margin: -16px 0 0 -16px;
-}
+
 .webgl {
   position: fixed;
   top: 0;
