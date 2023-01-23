@@ -4,6 +4,17 @@ import gsap from "gsap";
 
 
 /**
+ * Swiper
+ */
+var swiper = new Swiper(".mySwiper", {
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+});
+
+
+/**
  * Base
  */
 // Canvas

@@ -2,13 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Oxygen:wght@400;700&display=swap");
 
+element{
+  --color1 : #000807 ; 
+  --color2 : #A2A3BB;
+  --color3 : #9395D3 ;
+  --color4 : #B3B7EE ;
+  --color5 : #FBF9FF ;
+
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 html {
-  background: #02020a;
+  background: #000807;
   font-family: "Bebas Neue", cursive;
   scroll-behavior: smooth;
 }
@@ -30,7 +39,7 @@ html {
 
 .nav .wrapper a {
   float: left;
-  color: white;
+  color: #FBF9FF;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -42,18 +51,19 @@ html {
 }
 
 .nav .wrapper a:hover {
-  color: gray;
+  color: #A2A3BB;
   transition: 0.5s;
 }
 
 .nav .wrapper .navbar-center a {
   float: none;
-
   position: absolute;
-  top: 50%;
+  display: flex;
+  justify-content: center;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #b497d6;
+  color: #9395D3;
 }
 
 .nav .wrapper .navbar-left {
@@ -83,7 +93,7 @@ html {
   padding: 0.5vh;
   opacity: 2;
   cursor: pointer;
-  color: white;
+  color: #FBF9FF;
   transition: 0.5s;
   padding: 10px;
 }
@@ -91,7 +101,7 @@ html {
 .container-social-icon .social-media-icon i:hover {
   opacity: 2;
   cursor: pointer;
-  color: gray;
+  color: #A2A3BB;
   transition: 0.5s;
 }
 
@@ -112,15 +122,15 @@ html {
 }
 
 .home-page-section .text-presentation p:active {
-  color: gray;
+  color: #A2A3BB;
 }
 
 .home-page-section .text-presentation .multiText {
-  color: #b497d6;
+  color: #9395D3;
 }
 
 .home-page-section .text-presentation .text-presentation-wout-anim {
-  color: white;
+  color: #FBF9FF;
 }
 
 .work {
@@ -141,7 +151,7 @@ html {
   overflow: hidden;
   width: 65%;
   height: 65vh;
-  background-color: white;
+  background-color: #FBF9FF;
   border-radius: 10px;
   margin-bottom: 50vh;
   font-weight: bold;
@@ -183,7 +193,7 @@ html {
   position: absolute;
   width: 20%;
   height: 65vh;
-  left: 64%;
+  left: 63.5%;
   margin-top: 5px;
   font-weight: bold;
 }
@@ -196,72 +206,53 @@ html {
 }
 
 .skills-project {
-  position: absolute;
   width: 100%;
   height: 4vh;
   padding: 10px;
-  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
 
 .skills-code-project {
-  position: absolute;
-  height: auto;
-  margin-top: 2%;
-  padding: 0.1rem 1rem;
-  border-radius: 10px;
-  background: #878787;
-}
-
-.skills-code-project p {
-  font-size: small;
   display: flex;
   align-items: center;
-}
-
-.skills-code-project1 {
-  position: absolute;
   height: auto;
   margin-top: 2%;
-  padding: 0.1rem 1rem;
+  padding: .5rem 1rem;
   border-radius: 10px;
-  background: #878787;
+  background: #A2A3BB;
+  margin-right: 2%;
+  font-size: x-small;
 }
-
-.skills-code-project1 p {
-  font-size: small;
+.skills-code-project-working {
   display: flex;
   align-items: center;
-}
-
-.skills-code-project2 {
-  position: absolute;
   height: auto;
   margin-top: 2%;
-  padding: 0.1rem 1rem;
+  padding: .5rem 1rem;
   border-radius: 10px;
-  background: #878787;
-  margin-left: 30%;
+  background: #B3B7EE;
+  color: white;
+  margin-right: 2%;
+  font-size: x-small;
 }
 
-.skills-code-project2 p {
-  font-size: small;
-  display: flex;
-  align-items: center;
-}
 
 .projet-description {
   display: flex;
-  margin-top: 20%;
+  
   margin-left: 5%;
   position: absolute;
   width: 85%;
   height: 75%;
   font-size: medium;
   font-weight: 400;
+  
 }
 
 .projet-description p {
-  color: #878787;
+  color: #A2A3BB;
 }
 
 .aboutme-page-section {
@@ -286,7 +277,7 @@ html {
   font-weight: bold;
   display: flex;
   justify-content: space-around;
-  background-color: #878787;
+  /* background-color: #878787; */
 
 }
 
@@ -325,33 +316,36 @@ html {
   height: 40vh;
 
 }
-.aboutme-description i {
-  z-index: 1000;
-  background-color: rgb(255, 255, 255);
-  height: 46px;
-  width: 46px;
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
   text-align: center;
-  line-height: 46px;
-  padding : 0 15px 0 15px;
-  border-radius:50%;
-  
-
-  
-}
-.aboutme-description_caroussels{
-  display: inline-flex;
-  vertical-align: middle;
-}
-
-.aboutme-description_caroussel{
-  background-color: azure;
+  font-size: small;
+  background: #B3B7EE ;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
-  margin-right: 10vh;
-  height: 50vh;
-  width: 50vh;
+  overflow: hidden;
 }
+
+
+
+
+
+
 
 
 
@@ -385,8 +379,11 @@ html {
 }
 
 @media screen and (max-width: 1200px) {
-  .skills-project p {
-    font-size: 12.5px;
+  .skills-code-project {
+    font-size: xx-small;
+  }
+  .skills-code-project-working {
+    font-size: xx-small;
   }
 
   .projet-description {
@@ -456,6 +453,7 @@ html {
 
   .aboutme-picture {
     width: 50%;
+    margin-left:1%;
   }
 
   .aboutme-description {
@@ -466,16 +464,12 @@ html {
 }
 
 @media screen and (max-width: 650px) {
-  .skills-code-project2 {
-    margin-left: 30%;
+  .skills-code-project-working{
+    display: none;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .skills-code-project2 {
-    margin-left: 40%;
-  }
-}
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -491,4 +485,13 @@ html {
 ::-webkit-scrollbar-thumb {
   background: rgb(105, 105, 105);
   border-radius: 10px;
+}
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
 }
