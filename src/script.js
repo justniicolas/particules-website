@@ -5,6 +5,7 @@ import * as THREE from 'three'
  * Swiper
  */
 var swiper = new Swiper(".mySwiper", {
+    loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
@@ -148,6 +149,10 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
  */
 let scrollY = window.scrollY
 let currentSection = 0
+window.addEventListener("scroll", () => {
+    scrollY = window.scrollY;
+    const newSection = Math.round(scrollY / sizes.height);
+  });
 
 
 

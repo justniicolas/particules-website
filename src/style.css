@@ -326,7 +326,7 @@ html {
 .swiper-slide {
   text-align: center;
   font-size: small;
-  background: #B3B7EE ;
+  background: transparent ;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,6 +341,16 @@ html {
   -webkit-align-items: center;
   align-items: center;
   overflow: hidden;
+  color: #FBF9FF;
+}
+
+.swiper-slide img{
+  width: 60%;
+  display:inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  object-fit: cover;
+  margin-top: 15%;
 }
 
 
