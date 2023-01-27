@@ -178,10 +178,19 @@ html {
   height: 70vh;
   object-fit: cover;
 }
-
-.image-work img {
+.image-work img{
   object-fit: cover;
   transition: 1s;
+
+}
+
+.image-work iframe {
+  object-fit: cover;
+  transition: 1s;
+  width: 90%;
+  height: 65vh;
+  border : none
+
 }
 
 .image-work img:hover {
@@ -291,10 +300,15 @@ html {
   display: flex;
   justify-content:center;
   align-items: center;
+  /* opacity: 0;
+  transform:translateX(-100%) ; */
 
 }
-
-.aboutme-picture img {
+.aboutme-picture.acitve {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.aboutme-picture img { 
     
   width: 70%;
   border-radius: 50%;
@@ -505,5 +519,4 @@ html {
 
 ::selection {
   color: black;
-  background: white;
 }
