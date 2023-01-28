@@ -153,9 +153,11 @@ html {
   width: 65%;
   height: 65vh;
   background-color: #FBF9FF;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   margin-bottom: 50vh;
   font-weight: bold;
+  box-shadow: rgba(47, 47, 47, 0.2) 0px 7px 29px 0px;
+  
 }
 
 .image-work {
