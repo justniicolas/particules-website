@@ -185,6 +185,10 @@ html {
   transition: 1s;
 
 }
+.image-work img {
+  object-fit: cover;
+  transition: 1s;
+}
 
 .image-work iframe {
   object-fit: cover;
@@ -420,6 +424,11 @@ html {
 }
 
 @media screen and (max-width: 900px) {
+  .aboutme-picture img { 
+  
+    filter: blur(0px);
+
+  }
   .container-work {
     background-color: transparent;
   }
