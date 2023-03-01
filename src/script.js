@@ -47,12 +47,14 @@ const mesh3 = new THREE.Mesh(new THREE.TorusGeometry(1, 0.4, 16, 60), material);
 const mesh4 = new THREE.Mesh(new THREE.TorusGeometry(1, 0.4, 16, 60), material);
 const mesh5 = new THREE.Mesh(new THREE.TorusGeometry(1, 0.4, 16, 60), material);
 const mesh6 = new THREE.Mesh(new THREE.TorusGeometry(1, 0.4, 16, 60), material);
+const mesh7 = new THREE.Mesh(new THREE.TorusGeometry(1, 0.4, 16, 60), material);
 mesh1.position.x = 2;
 mesh2.position.x = -2;
 mesh3.position.x = 2;
 mesh4.position.x = -2;
 mesh5.position.x = 2;
 mesh6.position.x = -2;
+mesh7.position.x = 2;
 
 mesh1.position.y = -objectsDistance * 0;
 mesh2.position.y = -objectsDistance * 1;
@@ -60,8 +62,9 @@ mesh3.position.y = -objectsDistance * 2;
 mesh4.position.y = -objectsDistance * 3;
 mesh5.position.y = -objectsDistance * 4;
 mesh6.position.y = -objectsDistance * 5;
+mesh7.position.y = -objectsDistance * 6;
 
-const sectionMeshes = [mesh1, mesh2, mesh3, mesh4,mesh5,mesh6];
+const sectionMeshes = [mesh1, mesh2, mesh3, mesh4,mesh5,mesh6, mesh7];
 
 
 
