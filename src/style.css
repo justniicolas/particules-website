@@ -27,6 +27,11 @@ html {
   left: 0;
   outline: none;
 }
+a {
+  text-decoration: none;
+  color: #fbf9ff;
+
+}
 
 .nav .wrapper {
   background-color: transparent;
@@ -140,35 +145,33 @@ html {
 .repo-page-section {
   height: 100vh;
   width: 100%;
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Oxygen", sans-serif;
 }
 
 .repo-container {
-  margin-top: 30vh;
-  margin-left: 20.25%;
-  width: 65%;
-  height: 35vh;
-  margin-bottom: 50vh;
   display: grid;
-  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: 50vh;
+  overflow: hidden;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(2, 25vh);
 }
-.repository {
-  /* rectangle*/
+.repository {  
+  margin-left: 8%;
   background-color: transparent;
   color: #fbf9ff;
   border-style: groove;
   border-radius: 10px;
-
-  margin: 10px;
   padding: 10px;
   width: 75%;
   height: 60%;
   overflow: hidden;
 }
+
 
 .status-repo {
   margin-left: 1%;
@@ -419,11 +422,52 @@ html {
   .skills-project p {
     font-size: 17.5px;
   }
+  .repository {  
+    margin-left: 20%;
+    width: 55%;
+    height: 30%;
+    overflow: hidden;
+  }
+  
+  
+  .status-repo {
+    margin-left: 1%;
+    font-size: x-small;
+    border: #fbf9ff;
+    border-radius: 10px;
+    border-style: dotted;
+    padding: 2.5px 10px 2.5px 10px;
+  }
+  
+  .repo-description {
+    font-size: small;
+    padding: 10px 0px 10px 0px;
+  }
 }
 
 @media screen and (max-width: 2000px) {
   .skills-project p {
     font-size: 17.5px;
+  }
+  .repository {  
+    
+    height: 30%;
+    overflow: hidden;
+  }
+  
+  
+  .status-repo {
+    margin-left: 1%;
+    font-size: x-small;
+    border: #fbf9ff;
+    border-radius: 10px;
+    border-style: dotted;
+    padding: 2.5px 10px 2.5px 10px;
+  }
+  
+  .repo-description {
+    font-size: small;
+    padding: 10px 0px 10px 0px;
   }
 }
 
@@ -435,6 +479,28 @@ html {
   .skills-code-project2 {
     margin-left: 40%;
   }
+  .repository {  
+    margin-left: 10%;
+    width: 75%;
+    height: 35%;
+    overflow: hidden;
+  }
+  
+  
+  .status-repo {
+    margin-left: 1%;
+    font-size: x-small;
+    border: #fbf9ff;
+    border-radius: 10px;
+    border-style: dotted;
+    padding: 2.5px 10px 2.5px 10px;
+  }
+  
+  .repo-description {
+    font-size: small;
+    padding: 10px 0px 10px 0px;
+  }
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -452,11 +518,22 @@ html {
     display: flex;
     flex-direction: column;
     height: 70vh;
-    margin-top: 20%;
+    margin-top: 10%;
+    
   }
   .status-repo {
     display: none;
   }
+  .repository { 
+    margin-bottom: 10%; 
+    margin-left: 2%;
+    width: 55%;
+    height: 10%;
+    overflow: hidden;
+  }
+  
+  
+  
 }
 
 @media screen and (max-width: 900px) {
@@ -531,11 +608,31 @@ html {
     width: 40%;
     font-size: 15px;
   }
+  .repo-container {
+    height: 70vh;
+    margin-top: 10%;
+    
+  }
+
+  .repository { 
+    margin-bottom: 15%; 
+    height: 15%;
+  }
+
 }
 
 @media screen and (max-width: 650px) {
   .skills-code-project-working {
     display: none;
+  }
+  .repo-container {
+    margin-top: 0;
+    
+  }
+  .repository { 
+    margin-bottom: 15%; 
+    width: 60%;
+    height: 15%;
   }
 }
 
