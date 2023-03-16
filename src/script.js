@@ -81,7 +81,7 @@ scene.add(directionalLight)
  * Particles
  */
 // Geometry
-const particlesCount = 200
+const particlesCount = 1000
 const positions = new Float32Array(particlesCount * 3)
 
 for(let i = 0; i < particlesCount; i++)

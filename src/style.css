@@ -162,13 +162,22 @@ a {
 .repository {
   z-index: 1;
   margin-left: 8%;
-  background-color: white;
+  background-color: #ffffff;
   color: #000807;
   border-radius: 10px;
   padding: 10px;
   width: 75%;
   height: fit-content;
   box-shadow: #fbf9ffc5 0px 0px 20px 0px;
+  transition: 0.5s;
+
+}
+.repository:hover {
+  box-shadow: #9395d3 0px 0px 20px 0px;
+  transform: scale(1.05);
+  transition: 0.5s;
+  background-color: #e1e1e1;
+
 }
 
 .status-repo {
@@ -240,7 +249,6 @@ a {
   width: 90%;
   height: 65vh;
   border: none;
-  border-radius: 10px;
 }
 
 .image-work img:hover {
@@ -599,6 +607,9 @@ a {
   }
   .swiper {
     width: 100%;
+  }
+  .image-work iframe {
+    border-radius: 10px;
   }
 }
 
